@@ -20,7 +20,7 @@ contract ZCHFUSDTCurvePriceAdapter is IMinimalAggregatorV3Interface {
 	}
 
 	function description() external pure override returns (string memory) {
-		return 'zCHF/USDT exchange rate';
+		return 'zCHF/USDT curve pool price oracle';
 	}
 
 	function latestRoundData()
