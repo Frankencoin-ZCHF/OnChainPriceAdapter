@@ -1,14 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IMinimalAggregatorV3Interface} from './interfaces/IMinimalAggregatorV3Interface.sol';
-import {AggregatorV3Interface} from './interfaces/AggregatorV3Interface.sol';
+import {AggregatorV3LightInterface} from './interfaces/AggregatorV3LightInterface.sol';
 
 interface ICurvePool {
 	function price_oracle() external view returns (uint256);
 }
 
-contract ZCHFUSDTCurvePriceAdapter is IMinimalAggregatorV3Interface {
+contract ZCHFUSDTCurvePriceAdapter is AggregatorV3LightInterface {
 	ICurvePool public immutable curvePool;
 
 	constructor(address _curvePool) {
