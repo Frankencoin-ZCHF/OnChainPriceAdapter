@@ -1,8 +1,8 @@
 import { buildModule } from '@nomicfoundation/hardhat-ignition/modules';
 import { storeConstructorArgs } from '../../helper/store.args';
-import { args, params } from '../params/BackendWallet'; // <-- check for correct import
+import { args, params } from '../params/ZCHFUSDTCurvePriceAdapter'; // <-- check for correct import
 
-export const NAME: string = 'BackendWallet';
+export const NAME: string = 'ZCHFUSDTCurvePriceAdapter';
 export const MOD: string = NAME + 'Module';
 console.log(NAME);
 
