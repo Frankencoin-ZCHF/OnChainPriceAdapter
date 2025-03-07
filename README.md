@@ -1,5 +1,14 @@
 # Core
 
+On-Chain Price Adapter for fetching market real-time prices from DEXs like Uniswap V3, Curve, ... or e.g. Chainlink. Designed for seamless integration with DeFi protocols such as Morpho Vaults.
+
+| PriceAdapter | Read Contract Function |
+| ------ | ------ |
+| CHF/USD Chainlink | https://etherscan.io/address/0x8957ef2734226a22cdc8a5ebaefca131272e5234#readContract#F3 |
+| zCHF/USDT Curve | https://etherscan.io/address/0x20191448fcc813d34d0bdeae5cdb1e89b3fb7b8e#readContract#F4 |
+| xETH/USD | https://etherscan.io/address/0x6165946250dd04740ab1409217e95a4f38374fe9#readContract#F3 |
+| xCVX/USD | https://etherscan.io/address/0x19a5d0bb1200948adbb6c991494e7292dd8628cb#readContract#F3 |
+
 ### Yarn Package Scripts
 
 ```json
