@@ -1,8 +1,8 @@
 import { buildModule } from '@nomicfoundation/hardhat-ignition/modules';
 import { storeConstructorArgs } from '../../helper/store.args';
-import { args, params } from '../params/CHFUSDChainLinkPriceAdapter'; // <-- check for correct import
+import { args, params } from '../params/XETHUSDPriceAdapter'; // <-- check for correct import
 
-export const NAME: string = 'CHFUSDChainLinkPriceAdapter';
+export const NAME: string = 'XETHUSDPriceAdapter';
 export const MOD: string = NAME + 'Module';
 console.log(NAME);
 
