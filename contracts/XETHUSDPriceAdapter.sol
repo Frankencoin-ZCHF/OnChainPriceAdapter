@@ -28,7 +28,7 @@ contract XETHUSDPriceAdapter is AggregatorV3LightInterface {
 		override
 		returns (uint80 roundId, int256 answer, uint256 startedAt, uint256 updatedAt, uint80 answeredInRound)
 	{
-		(, uint256 price, ) = proxy.getCurrentNav();
+		(, , uint256 price) = proxy.getCurrentNav();
 		return (0, int256(price), 0, 0, 0);
 	}
 }
