@@ -1,8 +1,8 @@
 import { buildModule } from '@nomicfoundation/hardhat-ignition/modules';
 import { storeConstructorArgs } from '../../helper/store.args';
-import { args, params } from '../params/SUSDFUSDCProxyPriceAdapter'; // <-- check for correct import
+import { args, params } from '../params/SUSDFUSDFProxyPriceAdapter'; // <-- check for correct import
 
-export const NAME: string = 'SUSDFUSDCProxyPriceAdapter';
+export const NAME: string = 'SUSDFUSDFProxyPriceAdapter';
 export const MOD: string = NAME + 'Module';
 console.log(NAME);
 

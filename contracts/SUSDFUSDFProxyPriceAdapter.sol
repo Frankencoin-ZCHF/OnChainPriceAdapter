@@ -7,7 +7,7 @@ interface IProxy {
 	function convertToAssets(uint256 shares) external view returns (uint256);
 }
 
-contract SUSDFUSDCProxyPriceAdapter is AggregatorV3LightInterface {
+contract SUSDFUSDFProxyPriceAdapter is AggregatorV3LightInterface {
 	IProxy public immutable proxy;
 
 	constructor(address _proxy) {
@@ -19,7 +19,7 @@ contract SUSDFUSDCProxyPriceAdapter is AggregatorV3LightInterface {
 	}
 
 	function description() external pure override returns (string memory) {
-		return 'sUSDf/USDC proxy price oracle';
+		return 'sUSDf/USDf proxy price oracle';
 	}
 
 	function latestRoundData()
@@ -28,6 +28,6 @@ contract SUSDFUSDCProxyPriceAdapter is AggregatorV3LightInterface {
 		override
 		returns (uint80 roundId, int256 answer, uint256 startedAt, uint256 updatedAt, uint80 answeredInRound)
 	{
-		return (0, int256(proxy.price_oracle(1 ether)), 0, 0, 0);
+		return (0, int256(proxy.convertToAssets(1 ether)), 0, 0, 0);
 	}
 }
