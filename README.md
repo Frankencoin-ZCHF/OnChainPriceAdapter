@@ -10,6 +10,7 @@ On-Chain Price Adapter for fetching market real-time prices from DEXs like Unisw
 | xCVX/USD          | https://etherscan.io/address/0x19a5d0bb1200948adbb6c991494e7292dd8628cb#readContract#F3 |
 | USDf/USDC Curve   | https://etherscan.io/address/0xf358c1b4502710e9cE6172C2c542c7C6107f77E2#readContract#F4 |
 | sUSDf/USDf        | https://etherscan.io/address/0xbabad428f76d05cba8a3e81035c41579cb610bef#readContract#F3 |
+| sZCHF/ZCHF        | https://etherscan.io/address/0xd4bbb9cadae5d31d083456827e2dfd94eae7b971#readContract#F3 |
 
 ### Yarn Package Scripts
 
